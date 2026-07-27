@@ -1,0 +1,6 @@
+# one proxy per line
+# user:pass@host:port
+# host:port:user:pass
+# <SID> in user/pass is replaced per bot
+#
+# user-XXXX-country-us-session-<SID>-sessionduration-30:PASS@gate.example.com:10001

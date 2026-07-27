@@ -1,0 +1,41 @@
+{
+  "_comment": "Copy to my_mail.json, set api_key_env + URLs, then: python run.py --email my_mail",
+  "name": "my_mail",
+  "api_key_env": "MY_MAIL_API_KEY",
+  "poll_interval": 5,
+  "success_path": "success",
+  "success_value": true,
+  "create": {
+    "method": "GET",
+    "url": "https://api.example.com/{api_key}/emailGet",
+    "params": {
+      "site": "{site}",
+      "domain": "outlook.com"
+    },
+    "root": "result",
+    "order_id": "id",
+    "email": "email"
+  },
+  "code": {
+    "method": "GET",
+    "url": "https://api.example.com/{api_key}/emailCode",
+    "params": {
+      "id": "{order_id}"
+    },
+    "root": "result",
+    "code": "code"
+  },
+  "cancel": {
+    "method": "GET",
+    "url": "https://api.example.com/{api_key}/emailCancel",
+    "params": {
+      "id": "{order_id}"
+    }
+  },
+  "balance": {
+    "method": "GET",
+    "url": "https://api.example.com/{api_key}/balance",
+    "root": "result",
+    "balance": "balance"
+  }
+}

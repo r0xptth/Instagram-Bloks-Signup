@@ -1,0 +1,4 @@
+curl_cffi>=0.6
+names>=0.3
+PyNaCl>=1.5
+cryptography>=42

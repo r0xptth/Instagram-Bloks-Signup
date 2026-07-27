@@ -1,0 +1,10 @@
+.env
+proxies.txt
+hits.csv
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.har
+_last_create_bloks.txt
+.ip_geo_cache.json
