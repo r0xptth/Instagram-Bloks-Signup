@@ -34,8 +34,8 @@ Educational / research use. You own your accounts, keys, and proxies.
 ## Installation
 
 ```bash
-git clone https://github.com/r0xptth/instagram-mobile-bloks-signup.git
-cd instagram-mobile-bloks-signup
+git clone https://github.com/r0xptth/Instagram-Bloks-Signup.git
+cd Instagram-Bloks-Signup
 python -m venv .venv
 
 # Windows
@@ -112,7 +112,7 @@ If your provider uses a session id in the username or password, leave `<SID>` in
 `proxies.txt`. At runtime the lab swaps it for a unique id per bot.
 
 ```text
-user-XXXX-country-us-session-<SID>-sessionduration-30:PASSWORD@gate.decodo.com:10001
+user-XXXX-country-us-session-<SID>-sessionduration-30:PASSWORD@gate.example.com:10001
 ```
 
 Bot 1 might become `session-b100123`, bot 2 `session-b200456`, etc.
@@ -153,7 +153,7 @@ python run.py --email my_mail --bots 1
 ## Project layout
 
 ```
-instagram-mobile-bloks-signup/
+Instagram-Bloks-Signup/
   run.py                 # CLI entry
   email_api.py           # helpers for custom plugins
   docs/demo-terminal.png # README demo screenshot
